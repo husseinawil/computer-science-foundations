@@ -1,0 +1,26 @@
+=====================================================
+LAB 01: Linux CLI & System Architecture Log
+Module: 01-computer-fundamentals
+=====================================================
+
+1. System Environment Inspection
+----------------------------------
+$ uname -a
+Linux termux-android 5.10.x aarch64
+
+$ pwd
+/data/data/com.termux/files/home/Developer/computer-science-foundations
+
+2. Directory Inspection & File Permissions
+------------------------------------------
+$ ls -la digital-foundations/01-computer-fundamentals
+drwxr-xr-x 2 user user 4096 Aug  7 14:23 diagrams
+drwxr-xr-x 2 user user 4096 Aug  7 14:23 labs
+-rw-r--r-- 1 user user  850 Aug  7 15:37 README.md
+
+3. Practical Skills Log
+-----------------------
+[x] Navigated directory trees using absolute and relative paths (`cd`, `pwd`).
+[x] Inspected system permissions and hidden configuration files (`ls -la`).
+[x] Utilized standard input/output redirection (`cat << 'EOF'`).
+[x] Synchronized local repository state with remote GitHub host via Git CLI.
