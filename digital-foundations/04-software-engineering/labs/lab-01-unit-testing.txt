@@ -1,0 +1,25 @@
+=====================================================
+LAB 01: Modular Architecture & Unit Testing Log
+Module: 04-software-engineering
+=====================================================
+
+1. Engineering Principles
+-------------------------
+* Separation of Concerns: Business logic (`calculator.py`) isolated from test logic (`test_calculator.py`).
+* Assertion Verification: Automating regression checks for edge cases (e.g., divide-by-zero exceptions).
+
+2. Test Suite Execution Verification
+------------------------------------
+$ cd digital-foundations/04-software-engineering/code
+$ python3 test_calculator.py
+
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+3. Key Takeaways
+----------------
+[x] Automated unit test assertions prevent silent regressions during future refactoring.
+[x] Explicit error handling (`assertRaises(ValueError)`) ensures robust boundary validation.
