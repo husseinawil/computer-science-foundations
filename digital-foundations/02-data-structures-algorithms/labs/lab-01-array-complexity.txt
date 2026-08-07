@@ -1,0 +1,27 @@
+=====================================================
+LAB 01: Arrays & Time/Space Complexity Log
+Module: 02-data-structures-algorithms
+=====================================================
+
+1. Operational Complexity Summary
+----------------------------------
+* Access by Index:  O(1) Time | O(1) Space
+* Search by Value: O(n) Time | O(1) Space
+* Insertion (Mid): O(n) Time | O(1) Space
+* Deletion (Mid):  O(n) Time | O(1) Space
+* Append (End):     O(1) Amortized Time | O(1) Space
+
+2. Execution Verification
+-------------------------
+$ python3 digital-foundations/02-data-structures-algorithms/code/array_operations.py
+Initial Array: [10, 20, 30, 40, 50]
+O(1) Access at Index 0: 10
+O(n) Search for value 40: Found at Index 3
+O(n) Insert 25 at Index 2 (Shifting): [10, 20, 25, 30, 40, 50]
+O(1) Append 60 at End: [10, 20, 25, 30, 40, 50, 60]
+
+3. Key Structural Takeaways
+---------------------------
+[x] Contiguous memory layout allows direct memory offset calculation for O(1) indexing.
+[x] Mid-array insertions require O(n) element shifts to preserve index alignment.
+[x] Dynamic arrays reallocate capacity when internal buffer capacity is exceeded.
