@@ -1,0 +1,28 @@
+=====================================================
+LAB 05: Sorting Algorithms & Algorithmic Efficiency Log
+Module: 02-data-structures-algorithms
+=====================================================
+
+1. Sorting Algorithm Comparison Matrix
+--------------------------------------
+* Bubble Sort: O(n^2) Avg/Worst Time    | O(1) Space     | In-Place / Stable
+* Quick Sort:  O(n log n) Avg Time      | O(log n) Space | Divide & Conquer
+
+2. Scale Execution Benchmark Estimates
+---------------------------------------
+* Dataset Size (n = 100,000 items):
+  - Bubble Sort Operations (n^2):    ~10,000,000,000 operations
+  - Quick Sort Operations (n log n): ~1,660,964 operations
+
+3. Execution Verification
+-------------------------
+$ python3 digital-foundations/02-data-structures-algorithms/code/sorting_algorithms.py
+Unsorted Input: [64, 34, 25, 12, 22, 11, 90]
+
+Bubble Sort O(n^2): [11, 12, 22, 25, 34, 64, 90]
+Quick Sort O(n log n): [11, 12, 22, 25, 34, 64, 90]
+
+4. Key Takeaways
+----------------
+[x] Quadratic sorting algorithms degrade significantly as data scale expands.
+[x] Quick Sort recursive partitioning reduces sub-problem sizes logarithmically.
