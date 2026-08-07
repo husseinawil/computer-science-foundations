@@ -1,0 +1,29 @@
+=====================================================
+LAB 04: Search Algorithms & Logarithmic Complexity Log
+Module: 02-data-structures-algorithms
+=====================================================
+
+1. Search Algorithm Comparison
+------------------------------
+* Linear Search: O(n) Time | O(1) Space | Input Requirement: Unsorted or Sorted
+* Binary Search: O(log n) Time | O(1) Space | Input Requirement: Strictly Sorted
+
+2. Performance Analysis at Scale
+--------------------------------
+* Dataset Size (n = 1,000,000 items):
+  - Linear Search Worst-Case:  1,000,000 comparisons
+  - Binary Search Worst-Case:  ~20 comparisons (log2(1,000,000))
+
+3. Execution Verification
+-------------------------
+$ python3 digital-foundations/02-data-structures-algorithms/code/search_algorithms.py
+Dataset (Sorted): [12, 24, 32, 45, 57, 68, 79, 91, 105]
+Target Value: 68
+
+Linear Search Index: 5 | Complexity: O(n)
+Binary Search Index: 5 | Complexity: O(log n)
+
+4. Key Takeaways
+----------------
+[x] Divide-and-conquer strategy eliminates half the search space with each comparison.
+[x] Sorting overhead O(n log n) is amortized when performing repeated queries.
