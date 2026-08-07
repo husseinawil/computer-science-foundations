@@ -1,0 +1,32 @@
+=====================================================
+LAB 01: C Memory Layout, Pointers & Stack/Heap Log
+Module: 03-systems-low-level
+=====================================================
+
+1. Memory Segment Architecture
+------------------------------
+* Stack Memory: Managed automatically by CPU stack frames; high-speed allocation.
+* Heap Memory:  Dynamically managed via runtime OS calls (`malloc`/`free`); non-contiguous.
+* Pointers:     Variables that hold raw memory addresses rather than direct values.
+
+2. Compilation & Verification Output
+------------------------------------
+$ clang digital-foundations/03-systems-low-level/code/memory_pointers.c -o memory_pointers
+$ ./memory_pointers
+
+--- Stack Allocation ---
+Value of stack_var: 42
+Address of stack_var (&stack_var): 0x7fff5fbff7c8
+Pointer stack_ptr points to: 0x7fff5fbff7c8
+Dereferenced *stack_ptr: 42
+
+--- Heap Allocation ---
+Heap Value (*heap_ptr): 99
+Heap Memory Address (heap_ptr): 0x55a123b01260
+Heap memory freed successfully.
+
+3. Key Technical Insights
+-------------------------
+[x] Addressed memory location directly using the address-of (`&`) operator.
+[x] Read/write stack values using dereference (`*`) pointer operations.
+[x] Allocated dynamic heap memory with `malloc()` and prevented memory leaks with `free()`.
