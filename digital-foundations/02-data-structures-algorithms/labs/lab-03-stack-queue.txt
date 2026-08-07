@@ -1,0 +1,22 @@
+=====================================================
+LAB 03: Stacks (LIFO) & Queues (FIFO) Complexity Log
+Module: 02-data-structures-algorithms
+=====================================================
+
+1. Operational Complexity Summary
+----------------------------------
+* Stack Push:      O(1) Time | O(1) Space
+* Stack Pop:       O(1) Time | O(1) Space
+* Queue Enqueue:   O(1) Time | O(1) Space
+* Queue Dequeue:   O(n) Time (using array shift) | O(1) Space
+
+2. Execution Verification
+-------------------------
+$ python3 digital-foundations/02-data-structures-algorithms/code/stack_queue.py
+Stack Pop (LIFO - expect Page 3): Page 3
+Queue Dequeue (FIFO - expect Task 1): Task 1
+
+3. Practical Use Cases
+----------------------
+[x] Stacks (LIFO): Function call stacks, undo/redo buffers, expression parsing.
+[x] Queues (FIFO): OS process scheduling, network buffer packet handling, printer queues.
