@@ -16,13 +16,19 @@ Below is the environment configuration used for running operations, local testin
 
 ---
 
-## 🛠️ Key Concepts Covered
-* **Computer Architecture:** CPU cycles, RAM (volatile) vs. Storage (non-volatile), and bus systems.
-* **Command Line Interface (CLI):** Linux navigation, file permissions (`chmod`, `chown`), and streams.
-* **Networking Essentials:** IP addressing, DNS, TCP/IP, and HTTP communication.
+## 📊 Visual System Diagrams
+* **[`hardware-architecture.md`](./diagrams/hardware-architecture.md)** — Interactive Mermaid flowchart showing CPU, RAM, and Storage data pipeline.
 
 ---
 
-## 📁 Subdirectory Contents
-* **[`labs/`](./labs/)** — Practical terminal logs, command execution outputs, and exercises.
-* **[`diagrams/`](./diagrams/)** — System architecture flows, hardware logic, and network diagrams.
+## 🧪 Practical Execution Logs
+* **[`lab-01-cli-basics.txt`](./labs/lab-01-cli-basics.txt)** — Linux system inspection, directory paths, and file permissions.
+* **[`lab-02-data-representation.txt`](./labs/lab-02-data-representation.txt)** — Binary, Hexadecimal, ASCII encoding, and bitwise operations.
+* **[`lab-03-networking-and-os.txt`](./labs/lab-03-networking-and-os.txt)** — OS process tracking (`ps`), latency verification (`ping`), and HTTP requests (`curl`).
+
+---
+
+## 🛠️ Core Competencies Summary
+* **Computer Architecture:** Fetch-Decode-Execute CPU cycles, RAM (volatile) vs. Storage (non-volatile).
+* **Linux CLI:** Process management, stream redirection, and permission masks.
+* **Networking:** IP routing, DNS resolution, and application-layer protocols (HTTP).
