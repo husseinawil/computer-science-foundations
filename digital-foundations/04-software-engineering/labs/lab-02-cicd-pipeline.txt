@@ -1,0 +1,20 @@
+=====================================================
+LAB 02: Continuous Integration & GitHub Actions Log
+Module: 04-software-engineering
+=====================================================
+
+1. CI/CD Architectural Overview
+--------------------------------
+* Automation Trigger: On `push` or `pull_request` targeting `main`.
+* Runner Node: `ubuntu-latest` virtual environment hosted by GitHub.
+* Job Workflow: Checkout repository -> Setup Python runtime -> Execute unit tests.
+
+2. Workflow Configuration Summary
+---------------------------------
+* Configuration File: `.github/workflows/test.yml`
+* Test Command: `python3 digital-foundations/04-software-engineering/code/test_calculator.py`
+
+3. Key Engineering Takeaways
+----------------------------
+[x] Automated continuous integration ensures broken tests block faulty commits.
+[x] Shift-left testing catches unit regressions early in the deployment pipeline.
