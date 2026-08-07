@@ -32,3 +32,13 @@ Below is the environment configuration used for running operations, local testin
 * **Computer Architecture:** Fetch-Decode-Execute CPU cycles, RAM (volatile) vs. Storage (non-volatile).
 * **Linux CLI:** Process management, stream redirection, and permission masks.
 * **Networking:** IP routing, DNS resolution, and application-layer protocols (HTTP).
+
+
+## 4. File Systems & Security (Chapters 14–15)
+
+### File Systems & Organization
+* **Directory Tree Structure:** Linux/Unix single root hierarchy (/)
+* **Paths:** Absolute vs. Relative paths
+
+### Security Essentials
+* **Safe Computing & Hashing:** Principle of least privilege and data integrity.
