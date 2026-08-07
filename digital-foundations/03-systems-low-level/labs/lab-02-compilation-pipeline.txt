@@ -1,0 +1,29 @@
+=====================================================
+LAB 02: C Compilation Pipeline & Toolchain Log
+Module: 03-systems-low-level
+=====================================================
+
+1. The 4 Stages of C Compilation
+---------------------------------
+1. Preprocessing (`clang -E`): Expands `#include` headers, expands `#define` macros, strips comments.
+2. Compilation   (`clang -S`): Translates high-level C source code into assembly instructions (`.s`).
+3. Assembly      (`clang -c`): Converts assembly code into machine-code binary object file (`.o`).
+4. Linking       (`clang`):    Combines object files and standard system C libraries (`libc`) into executable binary.
+
+2. Stage Execution Verification Commands
+----------------------------------------
+$ clang -E code/compilation_demo.c -o labs/compilation_demo.i
+$ clang -S code/compilation_demo.c -o labs/compilation_demo.s
+$ clang -c code/compilation_demo.c -o labs/compilation_demo.o
+$ clang code/compilation_demo.c -o labs/compilation_demo
+
+3. Execution Output
+-------------------
+$ ./labs/compilation_demo
+Calculated Area: 78
+
+4. Key Takeaways
+----------------
+[x] Preprocessor replaces `#define PI` macros directly inline prior to structural compilation.
+[x] Assembly stage maps C variables and function calls to architecture-specific registers (ARM64/x86).
+[x] Linker resolves external standard symbols (`printf`) to library memory addresses.
