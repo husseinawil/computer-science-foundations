@@ -1,0 +1,21 @@
+=====================================================
+LAB 03: Memory Alignment & Struct Padding Log
+Module: 03-systems-low-level
+=====================================================
+
+1. Memory Alignment Principles
+------------------------------
+* Hardware word alignment requires types to be aligned at memory addresses matching their byte boundaries.
+* Compiler inserts implicit padding bytes when fields are ordered sub-optimally.
+
+2. Execution Verification
+-------------------------
+$ clang digital-foundations/03-systems-low-level/code/struct_alignment.c -o struct_alignment
+$ ./struct_alignment
+Size of PaddedStruct: 24 bytes
+Size of PackedStruct: 16 bytes
+
+3. Key Insights
+----------------
+[x] Ordering struct fields from largest to smallest eliminates waste from compiler padding bytes.
+[x] Saved 8 bytes of RAM per instance by optimizing memory alignment layout.
