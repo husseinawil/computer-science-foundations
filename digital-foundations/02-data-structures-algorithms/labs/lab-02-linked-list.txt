@@ -1,0 +1,25 @@
+=====================================================
+LAB 02: Linked Lists & Non-Contiguous Memory Log
+Module: 02-data-structures-algorithms
+=====================================================
+
+1. Operational Complexity Comparison (vs. Array)
+-------------------------------------------------
+* Access by Index:  O(n) Time | O(1) Space
+* Insertion (Head): O(1) Time | O(1) Space
+* Insertion (Tail): O(n) Time (without tail pointer) | O(1) Space
+* Search by Value:  O(n) Time | O(1) Space
+
+2. Execution Verification
+-------------------------
+$ python3 digital-foundations/02-data-structures-algorithms/code/linked_list.py
+Initial Linked List:
+10 -> 20 -> 30 -> None
+O(1) Prepend 5 at Head:
+5 -> 10 -> 20 -> 30 -> None
+
+3. Key Structural Takeaways
+---------------------------
+[x] Dynamic non-contiguous memory allocation via heap-allocated node references.
+[x] Prepending at the head executes in O(1) constant time without shifting items.
+[x] Index-based lookup requires linear traversal O(n) along pointer references.
